@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+			padding-left: 20px;
+			padding-right: 20px;
+			margin: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		div {
+			width: 150px;
+		}
+		.div1 {
+			height: 120px;
+			background: lightgray;
+		}
+		.div2 {
+			height: 100px;
+			background: lightblue;
+		}
+		.div3 {
+			height: 40px;
+			background: lightgreen;
+		}
+		.div4 {
+			height: 200px;
+			background: red;
+		}
+
+		@media screen and (max-width: 640px) {
+			body {
+				flex-wrap: wrap;
+				align-items: flex-start;
+			}
+			.div4 {
+				order: -1;
+			}
+		}
+		
+	</style>
+</head>
+<body>
+		<div class="div1"></div>
+		<div class="div2"></div>
+		<div class="div3"></div>
+		<div class="div4"></div>
+</body>
+</html>
